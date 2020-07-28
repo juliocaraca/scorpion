@@ -30,7 +30,6 @@ task zip(type: Zip) {
 		include "*"
 		include "src/**"
 		include "node_modules/**"
-		exclude "**/.gradle"
 	}
 	destinationDir(file("dist"))
 	baseName "niwa"
