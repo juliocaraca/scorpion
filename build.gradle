@@ -16,7 +16,13 @@ node {
 }
 
 //declare a build task
-task build
+
+task helloWorld( type: NodeTask, dependsOn: 'npmInstall' ) {
+    script = file( 'src' )
+}
+
+task build( dependsOn: 'helloWorld' ) {}
+
 
 //declare a task to create a zip of the app
 task zip(type: Zip) {
