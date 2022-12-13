@@ -2,7 +2,7 @@
   "name": "example",
   "version": "0.0.0",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "figlet": "^1.2.0",
     "npm": "^5.8.0"
   }
